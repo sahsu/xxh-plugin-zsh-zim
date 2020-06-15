@@ -1,7 +1,7 @@
 CURR_DIR="$(cd "$(dirname "$0")" && pwd)"
 plugin_name='xxh-plugin-zsh-ohmyzsh'
 
-export ZSH="$CURR_DIR/ohmyzsh"
+export ZSH="$CURR_DIR/.zim"
 
 if [[ -v ZSH_THEME ]]; then
   if [[ $XXH_VERBOSE == '2' ]]; then

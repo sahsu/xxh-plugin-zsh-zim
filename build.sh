@@ -27,9 +27,9 @@ cd $build_dir
 [ $QUIET ] && arg_s='-s' || arg_s=''
 [ $QUIET ] && arg_progress='' || arg_progress='--show-progress'
 
-ohmyzsh_home=$build_dir/ohmyzsh
+zim_home=$build_dir/.zim
 if [ -x "$(command -v git)" ]; then
-  git clone $arg_q --depth 1 https://github.com/robbyrussell/oh-my-zsh.git $ohmyzsh_home
+  git clone $arg_q --depth 1 https://github.com/zimfw/zimfw.git $zim_home
 else
   echo Install git
   exit 1
